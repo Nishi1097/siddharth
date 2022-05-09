@@ -13,14 +13,14 @@
         </div>
         <div class="menu" [ngClass]="{'menuClass' : menuRight}">
           <ul>
-            <li routerLink="/home">Home</li>
-            <li routerLink="/products">Products</li>
-            <li routerLink="/msds">MSDS</li>
-            <li routerLink="/export">Export</li>
-            <li routerLink="/careers">Careers</li>
-            <li routerLink="/csr">CSR</li>
-            <li routerLink="/mediacorner">Media Corner</li>
-            <li routerLink="/contactus">Contact Us</li>
+            <li routerLink="/home" (click)="resetMenu()">Home</li>
+            <li routerLink="/products" (click)="resetMenu()">Products</li>
+            <li routerLink="/msds" (click)="resetMenu()">MSDS</li>
+            <li routerLink="/export" (click)="resetMenu()">Export</li>
+            <li routerLink="/careers" (click)="resetMenu()">Careers</li>
+            <li routerLink="/csr" (click)="resetMenu()">CSR</li>
+            <li routerLink="/mediacorner" (click)="resetMenu()">Media Corner</li>
+            <li routerLink="/contactus" (click)="resetMenu()">Contact Us</li>
           </ul>
         </div>
       </div>

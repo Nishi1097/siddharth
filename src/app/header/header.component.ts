@@ -19,6 +19,10 @@ export class HeaderComponent implements OnInit {
     this.menuRight = !this.menuRight;
     this.closeIcon = !this.closeIcon;
   }
+  resetMenu () {
+    this.menuRight = false;
+    this.closeIcon = true;
+  }
   ngOnInit(): void {
   }
 
