@@ -24,11 +24,55 @@ header{
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
+.menu_icon {
+  display: none;
+}
 @media only screen and (max-width: 999px) {
   .menu {
     position: fixed;
-    right: 30px;
+    right: -280px;
+    width: 280px;
+    height: 100%;
     top: 60px;
     background: #32a852;
+    transition: 0.4s ease-in-out;
+  }
+  .menuClass {
+    right: 0;
+    transition: 0.4s ease-in-out;
+  }
+  .menu ul li {
+    display: block;
+    text-align: left;
+    padding: 10px 0 10px 25px;
+    margin: 0;
+    border-bottom: 1px solid #979b95;
+  }
+  .menu_icon {
+    display: inline-block;
+    position: fixed;
+    right: 25px;
+    top: 20px;
+  }
+  .menu_icon span {
+    width: 30px;
+    height: 4px;
+    background: #fff;
+    display: block;
+  }
+  .menu_icon span:nth-child(2) {
+    margin: 4px 0;
+  }
+  .menu_icon span:nth-child(3) {
+      margin: 4px 0;
+  }
+  .hideIconClass {
+    display: none !important;
+  }
+  .closeIcon {
+    color: #fff;
+  }
+  .barIcon {
+   color: #fff;
   }
 }
